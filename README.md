@@ -22,7 +22,7 @@ charges: Individual medical costs billed by health insurance
 Data source : https://www.kaggle.com/mirichoi0218/insurance
 
 
-INSIGHTS
+#INSIGHTS
 The insights drawn by performing Exploratory Data Analysis (EDA) are:
 
 Most people are a non smokers & obese.
@@ -30,11 +30,14 @@ Feature sex, region has an almost balanced amount.
 People who smoke & have a higher BMI, has higher medical charges.
 Older people who smoke have more expensive charges.
 An obese person who smokes have higher charges.
-DATA PROCESSING
+
+#DATA PROCESSING
 Check missing value - there are none
 Check duplicate value - there are 1 duplicate, will be remove
 Feature engineering - make a new column weight_status based on BMI score
+
 Feature transformation:
+
 A) Encoding sex, region, & weight_status attributes
 B) Ordinal encoding smoker attribute
 Modeling:
