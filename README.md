@@ -1,3 +1,4 @@
+# Medical_Insurance11
 Medical Insurance Cost Prediction
 
 PROJECT OVERVIEW
@@ -20,7 +21,6 @@ smoker: Smoking
 region: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest
 charges: Individual medical costs billed by health insurance
 Data source : https://www.kaggle.com/mirichoi0218/insurance
-
 
 #INSIGHTS
 The insights drawn by performing Exploratory Data Analysis (EDA) are:
