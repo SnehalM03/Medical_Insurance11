@@ -1,5 +1,10 @@
-FLASK_PORT_NUMBER=5005
 
-MODEL_FILE_NAME= r"artifacts\Linear_reg_model.pkl"
+import os
 
-COLUMN_DATA_JSON=r"artifacts\column_data"
+PATH = os.path.dirname(os.path.abspath(__file__))
+
+
+FLASK_PORT_NUMBER = 8080
+
+MODEL_FILE_NAME = os.path.join(PATH, "artifacts", "Linear_reg_model.pkl")
+COLUMN_DATA = os.path.join(PATH, "artifacts", "column_data")

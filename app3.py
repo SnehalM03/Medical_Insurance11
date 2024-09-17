@@ -1,9 +1,12 @@
 from flask import Flask,request,render_template,jsonify
 from utils import MedicalInsurance
+import config
 app=Flask(__name__)
 
-
-@app.route('/prediction')
+@app.route('/')
+def index():
+    return render_template('index.html')
+@app.route('/prediction',methods=['POST'])
 def prediction():
     data=request.form
     print(data)
@@ -21,4 +24,4 @@ def prediction():
         })
 
 if __name__=="__main__":
-    app.run(host='0.0.0.0',port=5005,debug=True)
+    app.run(host='0.0.0.0',port=8080,debug=True)
